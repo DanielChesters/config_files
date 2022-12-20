@@ -1,0 +1,10 @@
+zmodule romkatv/powerlevel10k --use degit
+
+zmodule completion
+zmodule ohmyzsh/ohmyzsh -s lib/compfix.zsh -s lib/directories.zsh -s lib/functions.zsh -s lib/git.zsh -s lib/grep.zsh -s lib/history.zsh -s lib/key-bindings.zsh -s lib/misc.zsh -s lib/spectrum.zsh -s lib/termsupport.zsh -s lib/theme-and-appearance.zsh -s plugins/git/git.plugin.zsh -s plugins/archlinux/archlinux.plugin.zsh -s plugins/gitfast/gitfast.plugin.zsh -s plugins/git-extras/git-extras.plugin.zsh -s plugins/git-prompt/git-prompt.plugin.zsh -s plugins/mvn/mvn.plugin.zsh -s plugins/gradle/gradle.plugin.zsh -s plugins/gitignore/gitignore.plugin.zsh -s plugins/cp/cp.plugin.zsh -s plugins/sudo/sudo.plugin.zsh
+
+zmodule zsh-users/zsh-syntax-highlighting --use git
+zmodule zsh-users/zsh-autosuggestions
+zmodule zsh-users/zsh-completions --fpath src
+zmodule chisui/zsh-nix-shell --name nix-shell
+zmodule spwhitt/nix-zsh-completions
