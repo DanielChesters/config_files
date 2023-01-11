@@ -33,21 +33,21 @@ require('packer').startup(function(use)
   use { 'ellisonleao/gruvbox.nvim' }
 
   use {
-    'kyazdani42/nvim-tree.lua',
+    'nvim-tree/nvim-tree.lua',
     requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+      'nvim-tree/nvim-web-devicons', -- optional, for file icon
     }
   }
   use {
-  'synaptiko/xit.nvim',
-  opt = true, -- for lazy-loading
-  ft = 'xit', -- for lazy-loading
-  run = function(plugin)
-    plugin.config()
-    vim.cmd[[:TSInstall! xit]]
-  end,
-  config = function() require('xit').setup() end,
-  requires = { 'nvim-treesitter/nvim-treesitter' }
+    'synaptiko/xit.nvim',
+    opt = true, -- for lazy-loading
+    ft = 'xit', -- for lazy-loading
+    run = function(plugin)
+      plugin.config()
+      vim.cmd[[:TSInstall! xit]]
+    end,
+    config = function() require('xit').setup() end,
+    requires = { 'nvim-treesitter/nvim-treesitter' }
   }
 
   if is_bootstrap then
@@ -79,6 +79,8 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 vim.opt.clipboard:prepend { "unnamed", "unnamedplus" }
 -- Set highlight on search
