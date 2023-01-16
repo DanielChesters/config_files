@@ -24,3 +24,7 @@ Packer should bootstrap itself on the first run of Neovim.
 
 - zellij_config.kdl -> ~/.config/zellij/config.kdl
 - zellij_theme_gruvbox.kdl -> ~/.config/zellij/themes/gruvbox.kdl
+
+### Paru
+
+- paru.conf -> ~/.config/paru/paru.conf
