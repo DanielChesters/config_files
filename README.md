@@ -28,3 +28,8 @@ Packer should bootstrap itself on the first run of Neovim.
 ### Paru
 
 - paru.conf -> ~/.config/paru/paru.conf
+
+### Kitty
+
+- kitty.conf -> ~/.config/kitty/kitty.conf
+- git clone https://github.com/wdomitrz/kitty-gruvbox-theme repository in kitty-gruvbox-theme folder
